@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Equipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Compromissos da Equipe</h1>
+        <p>Atualize seus compromissos e adicione novos membros à equipe.</p>
+        <button id="open-add-member-modal-btn" class="main-action-btn">Adicionar Colaborador</button>
+    </header>
+
+    <main class="team-container" id="team-container">
+        </main>
+    
+    <div id="add-member-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="close-modal-btn">&times;</span>
+            <h2>Novo Colaborador</h2>
+            <form id="add-member-form">
+                <input type="text" id="new-member-name" placeholder="Nome do colaborador" required>
+                <input type="url" id="new-member-photo" placeholder="URL da foto do colaborador" required>
+                <button type="submit" class="main-action-btn">Salvar Colaborador</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
